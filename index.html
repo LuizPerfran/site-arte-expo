@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Arte Moderna</title>
+    <!-- Bootstrap link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <!-- Links de Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Link Arquivo CSS -->
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- CABEÇALHO -->
+    <header id="cabecalho" class="navbar navbar-expand-lg sticky-top p-4">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title">Galeria Moderna</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre-a-galeria" class="nav-link">
+                            <i class="bi bi-building me-1"></i>
+                            Sobre a Galeria
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#exposicoes" class="nav-link">
+                            <i class="bi bi-palette me-1"></i>
+                            Exposições
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#artistas" class="nav-link">
+                            <i class="bi bi-person-vcard me-1"></i>
+                            Artistas
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#contato" class="nav-link">
+                            <i class="bi bi-envelope me-1"></i>
+                            Contato
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-scroll="true">
+        <!-- SEÇÃO SOBRE A GALERIA -->
+        <section id="sobre-a-galeria">
+            <!-- CARROSSEL -->
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="images/carrossel/exposicao1.jpg" alt="Destaque da exposição atual" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="images/carrossel/exposicao2.jpg" alt="Próxima exposição" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="images/carrossel/workshop.jpg" alt="Workshop de arte" class="d-block w-100">
+                    </div>
+                </div>
+                <!-- Controles do carrossel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="images/galeria/espaco.jpg" class="d-block w-100 rounded" alt="Espaço interno da galeria">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="section-title">Sobre <span class="text-colored">a galeria</span></h2>
+                            <p>A Galeria Moderna é um espaço dedicado à exibição e promoção de arte contemporânea, com foco em artistas emergentes e linguagens inovadoras.</p>
+                            
+                            <h3 class="section-title">Nossa <span class="text-colored">história</span></h3>
+                            <p>Começamos como um pequeno espaço alternativo e hoje somos uma das principais galerias da cidade, com mais de 50 exposições realizadas.</p>
+                            
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle-fill text-colored me-2"></i>Mais de 200 obras em nosso acervo</li>
+                                <li><i class="bi bi-check-circle-fill text-colored me-2"></i>Programa de residência artística</li>
+                                <li><i class="bi bi-check-circle-fill text-colored me-2"></i>Eventos culturais mensais</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO EXPOSIÇÕES -->
+        <section id="exposicoes" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Nossas <span class="text-colored">exposições</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <img src="images/exposicoes/abstracao.jpg" alt="Obra de arte abstrata" class="d-block w-100 rounded mb-2">
+                        <h3 class="text-colored section-title fs-4">
+                            <i class="bi bi-brush-fill"></i>
+                            Abstrações Contemporâneas
+                        </h3>
+                        <p>Explore as mais recentes tendências da arte abstrata nesta exposição que reúne 30 artistas de todo o país.</p>
+                    </div>
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <img src="images/exposicoes/fotografia.jpg" alt="Fotografia urbana" class="d-block w-100 rounded mb-2">
+                        <h3 class="text-colored section-title fs-4">
+                            <i class="bi bi-camera-fill"></i>
+                            Cidade em Foco
+                        </h3>
+                        <p>Fotógrafos capturam a essência da vida urbana em suas múltiplas facetas através de 50 imagens impactantes.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/exposicoes/escultura.jpg" alt="Escultura moderna" class="d-block w-100 rounded mb-2">
+                        <h3 class="text-colored section-title fs-4">
+                            <i class="bi bi-gear-fill"></i>
+                            Formas em Movimento
+                        </h3>
+                        <p>Esculturas interativas que convidam o público a participar. Uma experiência sensorial única.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO ARTISTAS -->
+        <section id="artistas" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">
+                        Nossos <span class="text-colored">artistas</span>
+                    </h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-artistas">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#pintores" class="fw-bold text-start nav-link text-colored active">Pintores</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#fotografos" class="fw-bold text-start nav-link text-colored">Fotógrafos</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#escultores" class="fw-bold text-start nav-link text-colored">Escultores</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#artistas-digitais" class="fw-bold text-start nav-link text-colored">Artistas Digitais</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <!-- TAB PAINEL PINTORES -->
+                            <div class="tab-pane active" id="pintores">
+                                <div class="row">
+                                    <div class="col-md-3 mb-4">
+                                    
+                                        <img src="images/artistas/pintor1.jpg" alt="Obra de Ana Silva" class="d-block w-100 rounded mb-2">
+                                        <h5 class="text-colored fw-bold mt-2">Ana Silva</h5>
+                                        <p>Abstração lírica com influência expressionista. Suas obras exploram a relação entre cor e emoção.</p>
+                                    </div>
+                                    <div class="col-md-3 mb-4">
+                                    
+                                        <img src="images/artistas/pintor2.jpg" alt="Obra de Carlos Mendes" class="d-block w-100 rounded mb-2">
+                                        <h5 class="text-colored fw-bold mt-2">Carlos Mendes</h5>
+                                        <p>Pintura figurativa com temática urbana. Retrata a solidão nas grandes cidades.</p>
+                                    </div>
+                                    <div class="col-md-3 mb-4">
+                                    
+                                        <img src="images/artistas/pintor3.jpg" alt="Obra de Marina Oliveira" class="d-block w-100 rounded mb-2">
+                                        <h5 class="text-colored fw-bold mt-2">Marina Oliveira</h5>
+                                        <p>Técnica mista que combina pintura e colagem. Temas feministas e ecológicos.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- TAB PAINEL FOTÓGRAFOS -->
+                            <div class="tab-pane" id="fotografos">
+                                <div class="row">
+                                    <div class="col-md-3 mb-4">
+                                    
+                                        <img src="images/artistas/fotografo1.jpg" alt="Foto de Pedro Almeida" class="d-block w-100 rounded mb-2">
+                                        <h5 class="text-colored fw-bold mt-2">Pedro Almeida</h5>
+                                        <p>Fotografia documental com foco em questões sociais. Premiada série sobre comunidades indígenas.</p>
+                                    </div>
+                                    <div class="col-md-3 mb-4">
+
+                                        <img src="images/artistas/fotografo2.jpg" alt="Foto de Juliana Costa" class="d-block w-100 rounded mb-2">
+                                        <h5 class="text-colored fw-bold mt-2">Juliana Costa</h5>
+                                        <p>Fotografia de moda conceitual. Trabalha com luz e sombra de forma inovadora.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- TAB PAINEL ESCULTORES -->
+                            <div class="tab-pane" id="escultores">
+                                <div class="row">
+                                    <div class="col-md-3 mb-4">
+                                    
+                                        <img src="images/artistas/escultor1.jpg" alt="Escultura de Rafael Torres" class="d-block w-100 rounded mb-2">
+                                        <h5 class="text-colored fw-bold mt-2">Rafael Torres</h5>
+                                        <p>Esculturas em aço que exploram o equilíbrio e a tensão. Obras em espaços públicos.</p>
+                                    </div>
+                                    <div class="col-md-3 mb-4">
+                                    
+                                        <img src="images/artistas/escultor2.jpg" alt="Escultura de Fernanda Lima" class="d-block w-100 rounded mb-2">
+                                        <h5 class="text-colored fw-bold mt-2">Fernanda Lima</h5>
+                                        <p>Esculturas orgânicas em madeira. Inspirada nas formas da natureza.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- TAB PAINEL ARTISTAS DIGITAIS -->
+                            <div class="tab-pane" id="artistas-digitais">
+                                <div class="row">
+                                    <div class="col-md-3 mb-4">
+                                    
+                                        <img src="images/artistas/digital1.jpg" alt="Arte Digital de Lucas Ribeiro" class="d-block w-100 rounded mb-2">
+                                        <h5 class="text-colored fw-bold mt-2">Lucas Ribeiro</h5>
+                                        <p>Arte generativa e interativa. Explora a relação entre tecnologia e percepção humana.</p>
+                                    </div>
+                                    <div class="col-md-3 mb-4">
+                                    
+                                        <img src="images/artistas/digital2.jpg" alt="Arte Digital de Beatriz Santos" class="d-block w-100 rounded mb-2">
+                                        <h5 class="text-colored fw-bold mt-2">Beatriz Santos</h5>
+                                        <p>NFTs e realidade aumentada. Cria mundos virtuais imersivos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO CONTATO -->
+        <section id="contato" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Entre em <span class="text-colored">contato</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form id="form-contato" novalidate>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu nome *</label>
+                                <input type="text" id="nome" class="form-control" required minlength="3">
+                                <div class="invalid-feedback">Por favor, insira seu nome (mínimo 3 caracteres).</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">Seu e-mail *</label>
+                                <input type="email" id="email" class="form-control" required>
+                                <div class="invalid-feedback">Por favor, insira um e-mail válido.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored">Seu telefone (opcional)</label>
+                                <input type="tel" id="telefone" class="form-control" pattern="\(?\d{2}\)?[\s-]?\d{4,5}[\s-]?\d{4}">
+                                <div class="invalid-feedback">Formato esperado: (99) 99999-9999 ou 99 9999-9999</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem *</label>
+                                <textarea class="form-control" id="mensagem" required minlength="10"></textarea>
+                                <div class="invalid-feedback">Por favor, escreva sua mensagem (mínimo 10 caracteres).</div>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-share-fill"></i>
+                                Redes Sociais</h3>
+                            <ul class="social-links list-unstyled d-flex">
+                                <li class="fs-3 me-3">
+                                    <a href="#" class="text-colored">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-3 me-3">
+                                    <a href="#" class="text-colored">
+                                        <i class="bi bi-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-3 me-3">
+                                    <a href="#" class="text-colored">
+                                        <i class="bi bi-twitter-x"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-3">
+                                    <a href="#" class="text-colored">
+                                        <i class="bi bi-youtube"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-geo-alt-fill"></i>
+                                Endereço</h3>
+                            <p>Rua das Artes, 123 - Centro<br>Goiânia - GO<br>CEP: 74000-000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- RODAPÉ -->
+    <footer class="text-center p-4">
+        <p class="m-0">&copy; 2023 Galeria Moderna - Todos os direitos reservados</p>
+    </footer>
+
+    <!-- SCRIPTS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    /* Validação do formulário */
+        (function() {
+            'use strict';
+            const form = document.getElementById('form-contato');
+            form.addEventListener('submit', function(event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            }, false);
+            
+            const telefone = document.getElementById('telefone');
+            telefone.addEventListener('input', function(e) {
+                let value = e.target.value.replace(/\D/g, '');
+                if (value.length > 2) {
+                    value = value.replace(/^(\d{2})(\d)/g, '($1) $2');
+                }
+                if (value.length > 10) {
+                    value = value.replace(/(\d{5})(\d)/, '$1-$2');
+                } else if (value.length > 6) {
+                    value = value.replace(/(\d{4})(\d)/, '$1-$2');
+                }
+                e.target.value = value;
+            });
+        })();
+    </script>
+</body>
+</html>

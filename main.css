@@ -1,0 +1,110 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    background-color: #343a40;
+}
+
+#cabecalho .navbar-toggler {
+    background-color: #6c757d;
+}
+
+/* Links normais */
+#cabecalho .nav .nav-link,
+.navbar-brand {
+    color: #fff;
+}
+
+/* Hover dos links */
+#cabecalho .nav .nav-link:hover {
+    color: #adb5bd;
+}
+
+/* Link ativo (quando a seção está visível) */
+#cabecalho .nav .nav-link.active {
+    background-color: #fff;
+    color: #343a40 !important;
+}
+
+/* Hover do link ativo */
+#cabecalho .nav .nav-link.active:hover {
+    color: #343a40 !important;
+}
+
+.navbar-brand:hover {
+    color: #fff;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+#sobre-a-galeria {
+    background-color: #e9ecef;
+}
+
+.text-colored {
+    color: #343a40;
+}
+
+/* Estilos dos artistas */
+.nav-artistas .nav-link.active,
+#contato button {
+    background-color: #343a40;
+    color: #fff;
+}
+
+.nav-artistas .nav-link:hover {
+    color: #343a40;
+}
+
+/* SEÇÃO CONTATO */
+.social-links li a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-links li a:hover {
+    opacity: 0.7;
+}
+
+/* Placeholders para imagens */
+.carousel-placeholder, 
+[class*="col-md"] > .bg-light {
+    background-color: #dee2e6 !important;
+}
+
+/* Rodapé */
+footer {
+    background-color: #343a40;
+    color: white;
+}
+
+/* Validação do formulário */
+.was-validated .form-control:invalid {
+    border-color: #dc3545;
+}
+
+.was-validated .form-control:valid {
+    border-color: #28a745;
+}
+
+/* Media Queries */
+@media (max-width: 767px) {
+    .carousel-item div {
+        height: 280px;
+    }
+    
+    .nav-artistas {
+        flex-direction: row !important;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+    
+    .nav-artistas .nav-link {
+        white-space: nowrap;
+    }
+}
