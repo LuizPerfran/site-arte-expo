@@ -37,6 +37,13 @@ body {
     color: #fff;
 }
 
+.carousel-item img {
+    width: 100%;
+    height: 540px;
+    object-fit: cover;
+    object-position: center;
+}
+
 .section-title {
     font-family: 'Playfair Display', serif;
     font-weight: 700;

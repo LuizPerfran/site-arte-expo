@@ -24,6 +24,7 @@
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
                 <span class="navbar-toggler-icon"></span>
             </button>
+    <!-- MENU DE NAVEGAÇÃO -->
             <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
                 <ul class="nav nav-pills d-block d-md-flex">
                     <li class="nav-item fw-bold">
@@ -32,18 +33,21 @@
                             Sobre a Galeria
                         </a>
                     </li>
+
                     <li class="nav-item fw-bold">
                         <a href="#exposicoes" class="nav-link">
                             <i class="bi bi-palette me-1"></i>
                             Exposições
                         </a>
                     </li>
+
                     <li class="nav-item fw-bold">
                         <a href="#artistas" class="nav-link">
                             <i class="bi bi-person-vcard me-1"></i>
                             Artistas
                         </a>
                     </li>
+
                     <li class="nav-item fw-bold">
                         <a href="#contato" class="nav-link">
                             <i class="bi bi-envelope me-1"></i>
@@ -54,34 +58,36 @@
             </nav>
         </div>
     </header>
-
-    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-scroll="true">
+    <!-- FIM DO CABEÇALHO -->
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
         <!-- SEÇÃO SOBRE A GALERIA -->
-        <section id="sobre-a-galeria">
+        <section id="sobre-a-galeria" tabindex="0">
             <!-- CARROSSEL -->
-            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="3000">
-                        <img src="images/carrossel/exposicao1.jpg" alt="Destaque da exposição atual" class="d-block w-100">
+            <div class="carousel-container">
+                <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <img src="images/carrossel/exposicao1.jpg" alt="Destaque da exposição atual" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="images/carrossel/exposicao2.jpg" alt="Próxima exposição" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="images/carrossel/workshop.jpg" alt="Workshop de arte" class="d-block w-100">
+                        </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="3000">
-                        <img src="images/carrossel/exposicao2.jpg" alt="Próxima exposição" class="d-block w-100">
+                    <!-- Controles do carrossel -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
                     </div>
-                    <div class="carousel-item" data-bs-interval="3000">
-                        <img src="images/carrossel/workshop.jpg" alt="Workshop de arte" class="d-block w-100">
-                    </div>
-                </div>
-                <!-- Controles do carrossel -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
-                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
                 </div>
             </div>
 
@@ -110,7 +116,7 @@
         </section>
 
         <!-- SEÇÃO EXPOSIÇÕES -->
-        <section id="exposicoes" class="pt-5 pb-5">
+        <section id="exposicoes" class="pt-5 pb-5" tabindex="0">
             <div class="container">
                 <div class="row">
                     <h2 class="section-title text-center">Nossas <span class="text-colored">exposições</span></h2>
@@ -145,7 +151,7 @@
         </section>
 
         <!-- SEÇÃO ARTISTAS -->
-        <section id="artistas" class="pt-5 pb-5">
+        <section id="artistas" class="pt-5 pb-5" tabindex="0">
             <div class="container">
                 <div class="row">
                     <h2 class="section-title text-center mb-5">
@@ -247,7 +253,7 @@
         </section>
 
         <!-- SEÇÃO CONTATO -->
-        <section id="contato" class="pt-5 pb-5">
+        <section id="contato" class="pt-5 pb-5" tabindex="0">
             <div class="container">
                 <div class="row">
                     <h2 class="section-title text-center">Entre em <span class="text-colored">contato</span></h2>
@@ -320,15 +326,17 @@
 
     <!-- RODAPÉ -->
     <footer class="text-center p-4">
-        <p class="m-0">&copy; 2023 Galeria Moderna - Todos os direitos reservados</p>
+        <p class="m-0">&copy; 2025 Galeria Moderna - Todos os direitos reservados</p>
     </footer>
 
     <!-- SCRIPTS JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-    /* Validação do formulário */
+    /* Validação do formulário e scroll suave */
         (function() {
             'use strict';
+            
+            // Validação do formulário
             const form = document.getElementById('form-contato');
             form.addEventListener('submit', function(event) {
                 if (!form.checkValidity()) {
@@ -338,6 +346,7 @@
                 form.classList.add('was-validated');
             }, false);
             
+            // Máscara de telefone
             const telefone = document.getElementById('telefone');
             telefone.addEventListener('input', function(e) {
                 let value = e.target.value.replace(/\D/g, '');
@@ -350,6 +359,26 @@
                     value = value.replace(/(\d{4})(\d)/, '$1-$2');
                 }
                 e.target.value = value;
+            });
+            
+            // Scroll suave para as seções
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 100,
+                            behavior: 'smooth'
+                        });
+                        
+                        // Foca no elemento para o scroll spy
+                        targetElement.focus();
+                    }
+                });
             });
         })();
     </script>
